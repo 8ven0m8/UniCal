@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GPA Calculator</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+    <div class="sidebar" id="sidebar">
+  <div class="sidebar-content">
+    <div class="nav-item" id="gpa-button">
+      <div class="nav-icon gpa-icon"></div>
+      <span>GPA</span>
+    </div>
+    <div class="nav-item" id="cgpa-button">
+      <div class="nav-icon cgpa-icon"></div>
+      <span>CGPA</span>
+    </div>
+    <div class="nav-item" id="formula-button">
+      <div class="nav-icon formula-icon"></div>
+      <span>Formula</span>
+    </div>
+  </div>
+</div>
+<div class="overlay" id="overlay"></div>
+
+  <header>
+    <div class="menu-icon">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="logo">UniCal</div>
+    <div style="width: 40px;"></div> <!-- spacer -->
+  </header>
+
+  <div class="container">
+    <h1>GPA-Calculator</h1>
+
+  <div class="inputs">
+    <div><input type="number" id="sub1-credit" placeholder="Credit 1"></div>
+    <div><input type="text" id="sub1-grade" placeholder="Grade 1"></div>
+    <div><input type="number" id="sub2-credit" placeholder="Credit 2"></div>
+    <div><input type="text" id="sub2-grade" placeholder="Grade 2"></div>
+    <div><input type="number" id="sub3-credit" placeholder="Credit 3"></div>
+    <div><input type="text" id="sub3-grade" placeholder="Grade 3"></div>
+    <div><input type="number" id="sub4-credit" placeholder="Credit 4"></div>
+    <div><input type="text" id="sub4-grade" placeholder="Grade 4"></div>
+    <div><input type="number" id="sub5-credit" placeholder="Credit 5"></div>
+    <div><input type="text" id="sub5-grade" placeholder="Grade 5"></div>
+    <div><input type="number" id="sub6-credit" placeholder="Credit 6"></div>
+    <div><input type="text" id="sub6-grade" placeholder="Grade 6"></div>
+    <div><input type="number" id="sub7-credit" placeholder="Credit 7"></div>
+    <div><input type="text" id="sub7-grade" placeholder="Grade 7"></div>
+    <div><input type="number" id="sub8-credit" placeholder="Credit 8"></div>
+    <div><input type="text" id="sub8-grade" placeholder="Grade 8"></div>
+    <div><input type="number" id="sub9-credit" placeholder="Credit 9"></div>
+    <div><input type="text" id="sub9-grade" placeholder="Grade 9"></div>
+    <div><input type="number" id="sub10-credit" placeholder="Credit 10"></div>
+    <div><input type="text" id="sub10-grade" placeholder="Grade 10"></div>
+    <div><input type="number" id="sub11-credit" placeholder="Credit 11"></div>
+    <div><input type="text" id="sub11-grade" placeholder="Grade 11"></div>
+    <div><input type="number" id="sub12-credit" placeholder="Credit 12"></div>
+    <div><input type="text" id="sub12-grade" placeholder="Grade 12"></div>
+    <div><input type="number" id="sub12-credit" placeholder="Credit 13"></div>
+    <div><input type="text" id="sub12-grade" placeholder="Grade 13"></div>
+    <div><input type="number" id="sub12-credit" placeholder="Credit 14"></div>
+    <div><input type="text" id="sub12-grade" placeholder="Grade 14"></div>
+    <button class="calculate-btn" id="calculate-btn">Calculate</button><button class="calculate-btn" id="clear-btn">Clear</button>
+  </div>
+
+    <div class="result-box">GPA: <span id="result-display">0.00</span></div>
+</div>
+  <script src="./script.js"></script>
+</body>
+</html>

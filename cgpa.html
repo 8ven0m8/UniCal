@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GPA Calculator</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+    <div class="sidebar" id="sidebar">
+  <div class="sidebar-content">
+    <div class="nav-item" id="gpa-button">
+      <div class="nav-icon gpa-icon"></div>
+      <span>GPA</span>
+    </div>
+    <div class="nav-item" id="cgpa-button">
+      <div class="nav-icon cgpa-icon"></div>
+      <span>CGPA</span>
+    </div>
+    <div class="nav-item" id="formula-button">
+      <div class="nav-icon formula-icon"></div>
+      <span>Formula</span>
+    </div>
+  </div>
+</div>
+<div class="overlay" id="overlay"></div>
+
+  <header>
+    <div class="menu-icon">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="logo">UniCal</div>
+    <div style="width: 40px;"></div> <!-- spacer -->
+  </header>
+
+  <div class="container">
+    <h1>CGPA-Calculator</h1>
+
+  <div class="inputs">
+    <div><input type="number" id="sem1-gpa" placeholder="Sem 1 GPA"></div>
+    <div><input type="number" id="sem1-credit" placeholder="Sem 1 Credits"></div>
+    <div><input type="number" id="sem2-gpa" placeholder="Sem 2 GPA"></div>
+    <div><input type="number" id="sem2-credit" placeholder="Sem 2 Credits"></div>
+    <div><input type="number" id="sem3-gpa" placeholder="Sem 3 GPA"></div>
+    <div><input type="number" id="sem3-credit" placeholder="Sem 3 Credits"></div>
+    <div><input type="number" id="sem4-gpa" placeholder="Sem 4 GPA"></div>
+    <div><input type="number" id="sem4-credit" placeholder="Sem 4 Credits"></div>
+    <div><input type="number" id="sem5-gpa" placeholder="Sem 5 GPA"></div>
+    <div><input type="number" id="sem5-credit" placeholder="Sem 5 Credits"></div>
+    <div><input type="number" id="sem6-gpa" placeholder="Sem 6 GPA"></div>
+    <div><input type="number" id="sem6-credit" placeholder="Sem 6 Credits"></div>
+    <div><input type="number" id="sem7-gpa" placeholder="Sem 7 GPA"></div>
+    <div><input type="number" id="sem7-credit" placeholder="Sem 7 Credits"></div>
+    <div><input type="number" id="sem8-gpa" placeholder="Sem 8 GPA"></div>
+    <div><input type="number" id="sem8-credit" placeholder="Sem 8 Credits"></div>
+    <div><input type="number" id="sem9-gpa" placeholder="Sem 9 GPA"></div>
+    <div><input type="number" id="sem9-credit" placeholder="Sem 9 Credits"></div>
+    <div><input type="number" id="sem10-gpa" placeholder="Sem 10 GPA"></div>
+    <div><input type="number" id="sem10-credit" placeholder="Sem 10 Credits"></div>
+    <div><input type="number" id="sem11-gpa" placeholder="Sem 11 GPA"></div>
+    <div><input type="number" id="sem11-credit" placeholder="Sem 11 Credits"></div>
+    <div><input type="number" id="sem12-gpa" placeholder="Sem 12 GPA"></div>
+    <div><input type="number" id="sem12-credit" placeholder="Sem 12 Credits"></div>
+    <button class="calculate-btn" id="calculate-btn">Calculate</button>
+    <button class="calculate-btn" id="clear-btn">Clear</button>
+</div>
+
+
+    <div class="result-box">CGPA: <span id="result-display">0.00</span></div>
+</div>
+  <script src="./cgpa.js"></script>
+</body>
+</html>

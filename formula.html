@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GPA Calculator</title>
+  <link rel="stylesheet" href="./styles.css" />
+  <style>
+    .container {
+  max-width: 600px;
+  margin: 4.7rem auto;
+  padding: 0 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  text-align: center;
+}
+
+.container p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 30px 0 15px;
+  color: #f1f3f5;
+}
+
+.container img {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #3498db;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(52, 152, 219, 0.2);
+  margin-bottom: 25px;
+  transition: transform 0.3s ease;
+}
+
+.container img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(52, 152, 219, 0.4);
+}
+
+  </style>
+</head>
+<body>
+    <div class="sidebar" id="sidebar">
+  <div class="sidebar-content">
+    <div class="nav-item" id="gpa-button">
+      <div class="nav-icon gpa-icon"></div>
+      <span>GPA</span>
+    </div>
+    <div class="nav-item" id="cgpa-button">
+      <div class="nav-icon cgpa-icon"></div>
+      <span>CGPA</span>
+    </div>
+    <div class="nav-item" id="formula-button">
+      <div class="nav-icon formula-icon"></div>
+      <span>Formula</span>
+    </div>
+  </div>
+</div>
+<div class="overlay" id="overlay"></div>
+
+  <header>
+    <div class="menu-icon">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="logo">UniCal</div>
+    <div style="width: 40px;"></div> <!-- spacer -->
+  </header>
+
+    <div class="container">
+    <p>Grade to Points table:</p>
+    <img src="icons/gptable.png" alt="Grade to Points Table" />
+    <p>CGPA Formula used:</p>
+    <img src="icons/cgpaformula.png" alt="CGPA Formula" />
+
+</div>
+  <script src="./script.js"></script>
+</body>
+</html>
