@@ -69,6 +69,12 @@ calculateButton?.addEventListener("click", () => {
     result.innerText  = `${calculateCGPA(takeInputValues())}`;
 });
 
+document.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+        result.innerText = `${calculateCGPA(takeInputValues())}`;
+    }
+});
+
 clearButton?.addEventListener("click", () => { clear(gpa); });
 
 document.addEventListener("DOMContentLoaded", () => {loadData();});
